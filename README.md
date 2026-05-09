@@ -11,45 +11,48 @@
 ---
 
 ### 👨‍💻 Sobre
-Atualmente cursando o **1º semestre** de Análise e Desenvolvimento de Sistemas na **Universidade Cidade de São Paulo (UNICID)**. Busco transição de carreira para a área de Tecnologia da Informação, com foco inicial em **Desenvolvimento Backend** e **TI Ads**.
+Atualmente cursando o **1º semestre** de Análise e Desenvolvimento de Sistemas na **Universidade Cidade de São Paulo (UNICID)**. Busco transição de carreira para a área de Tecnologia da Informação, unindo a experiência operacional com o desenvolvimento de soluções lógicas em **Backend** e análise de **Performance**.
 
-* **Habilidades Técnicas:** Lógica de Programação, Python (Básico), Auditoria de Usabilidade (IHC) e ferramentas de produtividade.
-* **Habilidades Socioemocionais:** Facilidade de aprendizado, organização, proatividade e excelente comunicação interpessoal.
-* **Objetivo:** Contribuir para o desenvolvimento de soluções tecnológicas eficientes enquanto aprimoro meus conhecimentos em linguagens de programação e infraestrutura.
+* **Habilidades Técnicas:** Lógica de Programação, Python, Auditoria de Usabilidade (IHC/Heurísticas de Nielsen) e Git/GitHub.
+* **Habilidades Socioemocionais:** Proatividade, organização, facilidade de aprendizado e comunicação assertiva.
+* **Objetivo:** Atuar como Desenvolvedor Júnior ou em áreas de Tecnologia voltadas para Performance (Ads), aplicando automação para otimizar resultados.
 
 ---
 
-### 🛠 Minhas Ferramentas Favoritas
+### 🛠 Ferramentas e Tecnologias
 
-#### 💻 Linguagens e Tecnologias
+#### 💻 Desenvolvimento
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-
-#### ⚙️ Controle de Versão e Gestão
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+#### 📊 Performance & Outros
 ![Google Ads](https://img.shields.io/badge/Google%20Ads-4285F4?style=for-the-badge&logo=google-ads&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
 ---
 
 ### 📂 Portfólio de Projetos
 
-#### 🔍 Acadêmico & IHC (Interface Humano-Computador)
+#### 🐍 Desenvolvimento Backend & Lógica (Python)
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Auditoria de Usabilidade** | Relatório diagnóstico do Portal Gov.br utilizando as 10 Heurísticas de Nielsen. | [Ver Projeto](./projeto-auditoria-ihc/) |
+| **Simulador de Juros Compostos** | Cálculo de projeção financeira e evolução de capital. | [Ver Projeto](./projeto-juros-compostos/) |
+| **Controle de Estoque** | Sistema de gestão de inventário e fluxo de mercadorias. | [Ver Projeto](./projeto-controle-estoque/) |
+| **Gestão de Consultas** | Algoritmo para agendamento e organização de clínicas médicas. | [Ver Projeto](./projeto-gestao-consultas/) |
 
-#### 🐍 Desenvolvimento & Lógica
+#### 🔍 Experiência do Usuário & Auditoria (IHC)
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Exercícios de Python** | Coleção de scripts para resolução de problemas e algoritmos básicos. | [Ver Projeto](./scripts-python/) |
+| **Auditoria de Usabilidade** | Diagnóstico do Portal Gov.br baseado nas Heurísticas de Nielsen. | [Ver Projeto](./projeto-auditoria-ihc/) |
 
 ---
 
 ### 🏗 Estrutura do Repositório
-- `root/`: Página principal de apresentação.
-- `/projeto-auditoria-ihc/`: Documentação e análise de interfaces.
-- `/scripts-python/`: Repositório de códigos e estudos em Python.
+- `/projeto-juros-compostos/`: Script de cálculos financeiros.
+- `/projeto-controle-estoque/`: Sistema de gestão de produtos.
+- `/projeto-gestao-consultas/`: Automação para agendamentos de saúde.
+- `/projeto-auditoria-ihc/`: Relatório de usabilidade e acessibilidade.
 
 ---
 [Voltar ao topo](#rodrigo-seriaco-lovato)
