@@ -1,0 +1,80 @@
+# Projeto: Sistema de Controle de Estoque
+# Desenvolvedor: Rodrigo Seriaco Lovato
+
+def menu():
+    print("\n" + "="*30)
+    print("   SISTEMA DE ESTOQUE - ADS")
+    print("="*30)
+    print("1. Cadastrar Produto")
+    print("2. Registrar Entrada (Soma)")
+    print("3. Registrar Saída (Subtração)")
+    print("4. Consultar Saldo Atual")
+    print("5. Sair")
+    print("="*30)
+
+def sistema_estoque():
+    estoque = {}
+
+    while True:
+        menu()
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == '1':
+            nome = input("Nome do produto: ").strip().upper()
+            if nome in estoque:
+                print("Produto já cadastrado!")
+            else:
+                try:
+                    quantidade = int(input(f"Quantidade inicial de {nome}: "))
+                    preco = float(input(f"Preço unitário de {nome}: R$ "))
+                    estoque[nome] = {'quantidade': quantidade, 'preco': preco}
+                    print(f"Produto {nome} cadastrado com sucesso!")
+                except ValueError:
+                    print("Erro: Digite apenas números para quantidade e preço.")
+
+        elif opcao == '2':
+            nome = input("Nome do produto para ENTRADA: ").strip().upper()
+            if nome in estoque:
+                try:
+                    qtd = int(input(f"Quantidade a adicionar em {nome}: "))
+                    estoque[nome]['quantidade'] += qtd
+                    print(f"Estoque atualizado: {nome} agora tem {estoque[nome]['quantidade']} unidades.")
+                except ValueError:
+                    print("Erro: Digite um número inteiro.")
+            else:
+                print("Produto não encontrado!")
+
+        elif opcao == '3':
+            nome = input("Nome do produto para SAÍDA: ").strip().upper()
+            if nome in estoque:
+                try:
+                    qtd = int(input(f"Quantidade a retirar de {nome}: "))
+                    if qtd <= estoque[nome]['quantidade']:
+                        estoque[nome]['quantidade'] -= qtd
+                        print(f"Saída registrada! Estoque atual: {estoque[nome]['quantidade']}")
+                    else:
+                        print("Erro: Saldo insuficiente para essa saída.")
+                except ValueError:
+                    print("Erro: Digite um número inteiro.")
+            else:
+                print("Produto não encontrado!")
+
+        elif opcao == '4':
+            print("\n--- SALDO ATUAL DO ESTOQUE ---")
+            if not estoque:
+                print("Estoque vazio.")
+            else:
+                for produto, info in estoque.items():
+                    total_valor = info['quantidade'] * info['preco']
+                    print(f"Produto: {produto} | Qtd: {info['quantidade']} | Preço: R${info['preco']:.2f} | Total: R${total_valor:.2f}")
+            print("-" * 30)
+
+        elif opcao == '5':
+            print("Encerrando o sistema... Até logo!")
+            break
+        
+        else:
+            print("Opção inválida! Tente novamente.")
+
+if __name__ == "__main__":
+    sistema_estoque()
